@@ -2,4 +2,79 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #6b00d6;
+  display: grid;
+  place-content: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: #8716f9;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.overlay {
+  -webkit-clip-path: circle(0%);
+          clip-path: circle(0%);
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.overlay .exit {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.menu-container {
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.menu-container ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  font-size: 0.9rem;
+}
+.menu-container ul li a:hover {
+  background: rgb(240, 236, 240);
+  border-radius: 0.2rem;
+}
+
+p.category {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6b00d6;
+  margin-left: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
