@@ -66,4 +66,25 @@ section .hero::after {
   opacity: 0.3;
   left: 0;
   top: 0;
+}
+
+.animation {
+  overflow: hidden;
+  max-height: 100vh;
+  background: linear-gradient(to right, #d1a984, #ba7453);
+  position: relative;
+}
+.animation .paper-plane {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+footer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

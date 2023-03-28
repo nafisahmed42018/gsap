@@ -69,3 +69,24 @@ section {
     top: 0;
   }
 }
+
+.animation {
+  overflow: hidden;
+  max-height: 100vh;
+  background: linear-gradient(to right, #d1a984, #ba7453);
+  position: relative;
+  .paper-plane {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+footer {
+  // border: 2px solid red;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
